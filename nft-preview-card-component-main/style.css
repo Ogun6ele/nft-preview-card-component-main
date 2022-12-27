@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+:root{
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    margin: 0 auto;
+    background-color: var(--main-BG);
+}
+
+.card-container{
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.card-wrapper{
+    margin: 2rem 1rem;
+    background-color: var(--card-BG);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.img-equil{
+border-radius: 12px;
+overflow: hidden;
+position: relative
+
+}
+
+.img-equil img{
+    width: 100%;
+    display: block;
+}
+
+.img-equil_overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.img-equil_overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-equil:hover .img-equil_overlay{
+    display:block;
+}
+
+.text-header a{
+    color: var(--White);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.text-header p{
+    font-size: 16px;
+}
+
+p{
+    color: var(--Soft-blue);
+    font-size: 15px;
+}
+
+a:hover{
+    color: var(--Cyan);
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--White)
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.eth, .clock{
+    display: flex;
+    align-items: center;
+}
+
+.eth p{
+    color: var(--Cyan);
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.clock p{
+    padding-left: 5px;
+}
+
+hr{
+    border-color: var(--line);
+}
+
+.author-info{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.author-info img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right: 15px;
+}
+.author-info p{
+    padding-left: 5px;
+}
